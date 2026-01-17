@@ -1,0 +1,131 @@
+.profile-setup {
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+.setup-container {
+  background: #111111;
+  border: 1px solid #222222;
+  border-radius: 16px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.setup-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.setup-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem 0;
+}
+
+.setup-header p {
+  font-size: 1.1rem;
+  color: #888888;
+  margin: 0;
+}
+
+.setup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #cccccc;
+}
+
+.form-group input,
+.form-group select {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #666666;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #6366f1;
+  background: #222222;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-group select option {
+  background: #1a1a1a;
+  color: white;
+}
+
+.submit-btn {
+  background: #333333;
+  color: #888888;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-btn.active {
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-btn.active:hover {
+  background: #5855eb;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .profile-setup {
+    padding: 1rem;
+  }
+  
+  .setup-container {
+    padding: 2rem;
+  }
+  
+  .setup-header h1 {
+    font-size: 2rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

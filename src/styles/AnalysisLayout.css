@@ -1,0 +1,33 @@
+/* ANALYSIS LAYOUT FOR CHATBOT INTEGRATION */
+.analysis-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: calc(100vh - 200px);
+}
+
+.analysis-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+}
+
+.chatbot-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .analysis-layout {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .chatbot-section {
+    margin-top: 2rem;
+  }
+}
+
+/* Existing styles remain the same */
